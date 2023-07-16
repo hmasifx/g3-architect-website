@@ -86,7 +86,7 @@ nav li a {
 main {
 
     max-width: 1440px;
-    margin: 0px auto;
+    margin: 70px auto;
 }
 
 .teams-container {
@@ -156,7 +156,27 @@ main {
     nav {
         flex-direction: column;
     }
+    .teams-container
+{
+    flex-direction: column;
 }
+
+.teams-img-container
+{
+    grid-template-columns: 1fr;
+    margin-left: 20px;
+}
+.teams-content {
+    padding-left: 40px;
+    padding-right:  40px;
+}
+}
+
+
+
+
+
+
 
 /* Tab device or medium devices */
 @media screen and (min-width : 576px) and (max-width : 960px) {
@@ -167,5 +187,16 @@ main {
     header {
         padding: 50px;
     }
+    .teams-container
+    {
+        flex-direction: column;
+    }
+    .teams-img-container
+    {
+        margin-left: 30px;
+    }
+    
+    
 
 }
+
