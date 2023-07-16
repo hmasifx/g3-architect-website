@@ -136,7 +136,61 @@ main {
 
 }
 
+/* facts section style */
+.facts-tittle {
+    color: var(--dark-01, #131313);
+    font-size: 45px;
+    font-weight: 700;
+}
 
+.facts-card-container .card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 30px;
+}
+
+.facts-card-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.facts-card-container .card-stats {
+    font-size: 2.8rem;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.facts-card-container .card-tittle {
+    color: var(--dark-03, #727272);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+/* sponsor section styles */
+.sponsor-tittle {
+    color: var(--dark-01, #131313);
+    font-size: 45px;
+    font-weight: 700;
+}
+.sponsors
+{
+    text-align: center;
+}
+.sponsors-image-container
+{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   margin-top: 50px;
+   gap: 35px;
+}
+.sponsors-image-container img
+{
+    width: 165px;
+}
 
 
 
@@ -153,23 +207,29 @@ main {
         padding: 20px;
     }
 
-    nav {
+    nav,
+    .facts-card-container,.sponsors-image-container {
         flex-direction: column;
     }
-    .teams-container
-{
-    flex-direction: column;
-}
 
-.teams-img-container
-{
-    grid-template-columns: 1fr;
-    margin-left: 20px;
-}
-.teams-content {
-    padding-left: 40px;
-    padding-right:  40px;
-}
+    .teams-container {
+        flex-direction: column;
+    }
+
+    .teams-img-container {
+        grid-template-columns: 1fr;
+        margin-left: 20px;
+    }
+
+    .teams-content,
+    .facts-card-container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .facts-card-container {
+        gap: 20px;
+    }
 }
 
 
@@ -187,16 +247,15 @@ main {
     header {
         padding: 50px;
     }
-    .teams-container
-    {
+
+    .teams-container ,.sponsors-image-container {
         flex-direction: column;
     }
-    .teams-img-container
-    {
-        margin-left: 30px;
+
+    .teams-img-container {
+        margin-left: 20px;
     }
-    
-    
+
+
 
 }
-
